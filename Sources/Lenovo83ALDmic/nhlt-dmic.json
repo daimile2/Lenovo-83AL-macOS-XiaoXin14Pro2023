@@ -1,0 +1,74 @@
+{
+  "source_sha256": "d3ad6debc0a8a0d81c11ab6a2c8fa6a624013b4b352a37114a2a2f93eac1fdd7",
+  "source_length": 3920,
+  "oem": "LENOVO",
+  "oem_table_id": "CB-01",
+  "endpoint": {
+    "link_type": 2,
+    "instance": 0,
+    "vendor_device": "8086:ae20",
+    "subsystem": "17aa:3845",
+    "direction": "capture",
+    "virtual_bus_id": 0,
+    "microphones": 2,
+    "formats": 1,
+    "wave_format": {
+      "tag": "0xfffe",
+      "channels": 2,
+      "rate": 48000,
+      "average_bytes_per_second": 192000,
+      "block_align": 4,
+      "bits_per_sample": 16,
+      "valid_bits_per_sample": 16,
+      "channel_mask": 3
+    },
+    "vendor_blob_bytes": 3048
+  },
+  "hardware_blob": {
+    "gateway_attributes": 1,
+    "ts_group_0": "0xffffff10",
+    "ts_group_1": "0xffffff10",
+    "ts_group_2": "0xffffffff",
+    "ts_group_3": "0xffffffff",
+    "clock_on_delay": 3,
+    "channel_ctrl_mask": 3,
+    "outcontrol_0": "0x00300003",
+    "outcontrol_1": "0x00300003",
+    "channel_pdm_mask": 3,
+    "pdm0_and_pdm1_identical": true,
+    "per_pdm": {
+      "cic_control": "0x0000c001",
+      "cic_config": "0x0b001803",
+      "mic_control": "0x00000e03",
+      "stereo": true,
+      "cic_shift": 3,
+      "comb_count": 24,
+      "mcic": 25,
+      "clock_divider": 16,
+      "pdm_clock_hz": 2400000,
+      "skew": 0,
+      "clock_edge": 0,
+      "fir_a": {
+        "control": "0x00000091",
+        "config": "0x00010076",
+        "taps": 119,
+        "decimation": 2,
+        "shift": 0,
+        "out_gain_left": 0,
+        "out_gain_right": 0
+      },
+      "fir_b": {
+        "control": "0x00000091",
+        "config": "0x000501e8",
+        "taps": 233,
+        "decimation": 6,
+        "shift": 1,
+        "out_gain_left": 0,
+        "out_gain_right": 0
+      }
+    }
+  },
+  "derived_rate_check": "38400000 / 16 / 25 / 2 = 48000",
+  "ipc3_2ch_selection": "PDM0 mic A+B enabled; PDM1 disabled; num_pdm_active=1",
+  "important_distinction": "NHLT contains hardware configurations for two PDM controllers, while the two-microphone IPC3 topology selects one stereo PDM. This is not a four-channel microphone array."
+}
