@@ -16,7 +16,7 @@
 | 音频 | Realtek ALC287，PCH HDA/cAVS `8086:51ca`，subsystem `17aa:3845` |
 | 数字麦克风 | PCH DMIC／SOF，双路数字麦克风 |
 | 系统 | macOS 26.7.3，build `25G342`，Darwin `25.6.0`，x86_64 |
-| 公开部署引导 | OpenCore 1.0.8；不包含发布者的 rEFInd、Ubuntu 或其他个性化启动文件 |
+| 公开部署引导 | OpenCore 1.0.8 |
 
 ## 当前实测可用的内容
 
